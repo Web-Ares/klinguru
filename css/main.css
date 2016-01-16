@@ -211,11 +211,11 @@ input[type="search"]::-webkit-search-cancel-button {
 /* --------------- /logo --------------- */
 
 /* --------------- description --------------- */
-.description{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    background: url("../img/bg-description.jpg") no-repeat auto 100%;
-}
+/*.description{*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*background: url("../img/bg-description.jpg") no-repeat auto 100%;*/
+/*}*/
 /* --------------- /description --------------- */
 
