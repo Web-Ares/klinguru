@@ -79,6 +79,50 @@ input[type="search"]::-webkit-search-cancel-button {
     height: 125px;
     margin: 0 auto;
     z-index: 3;
+    padding-top: 70px;
+}
+.header__menu{
+    text-align: right;
+}
+.header__menu a{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    font-size: 16px;
+    color: #000;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+.header__menu a:hover{
+    text-decoration: none;
+}
+a.site__header-present:before{
+    content: "";
+    position: absolute;
+    left: -35px;
+    width:40px;
+    height:18px;
+    background:url(../img/present.png) no-repeat;
+    background-size: contain;
+}
+a.site__header-town{
+    text-decoration: none;
+    border-bottom: 1px dotted #000;
+    margin-right: 100px;
+    transition: border .3s ease;
+}
+a.site__header-town:after{
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -18px;
+    width: 14px;
+    height: 8px;
+    background: url(../img/town-down.png) no-repeat;
+    background-size: contain;
+}
+a.site__header-town:hover{
+   border: none;
 }
 .site__content {
     position: relative;
@@ -97,17 +141,86 @@ input[type="search"]::-webkit-search-cancel-button {
     margin: 0 auto;
 }
 .site__footer {
-    z-index: 2;
+    background: #003669;
     position: absolute;
+    z-index: 2;
     left: 0;
     right: 0;
     bottom: 0;
     height: 140px;
 }
 .site__footer-layout {
-    width: 100%;
+    position: relative;
+    width: 940px;
     height: 140px;
-    background: #003669;
+    margin: 0 auto;
+    padding-top: 23px;
+}
+.site__footer-copyright{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    color: #fff;
+}
+.site__footer-copyright span{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.site__footer-copyright a{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    color: #fff;
+    cursor: default;
+}
+.site__footer-copyright a:last-child:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.site__footer-pay{
+    display: inline-block;
+    vertical-align: top;
+    color: #fff;
+}
+.site__footer-pay span{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.site__footer-pay .visa,
+.site__footer-pay .master-cart{
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 42px;
+    background: url("../img/pay01.png") no-repeat ;
+    background-size: contain;
+    transition: opacity .3s ease;
+
+}
+.site__footer-pay .visa{
+    background: url("../img/pay02.png") no-repeat ;
+    background-size: contain;
+    margin-left: 10px;
+}
+.site__footer-pay .visa:hover,
+.site__footer-pay .master-cart:hover{
+    opacity: 0.7;
+}
+.footer__menu{
+    display: inline-block;
+    vertical-align: top;
+    width: 430px;
+    text-align: justify;
+    margin-right: 26px;
+}
+.footer__menu a{
+    color: #fff;
+    margin-right: 20px;
+}
+.footer__menu a:hover{
+    text-decoration: underline;
 }
 .site__title{
     font-size: 30px;
@@ -566,3 +679,36 @@ span.reviews__purity{
 }
 /* --------------- /description --------------- */
 
+/* --------------- social --------------- */
+.social{
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+    font-size: 18px;
+    color:#fff;
+    margin-right: 100px;
+}
+.social span{
+    display: block;
+    margin-bottom: 10px;
+}
+.social a{
+    display: inline-block;
+    vertical-align: top;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background: url("../img/social-icon.png");
+    background-position: -73px -12px;
+    transition: opacity .3s ease;
+}
+a.social-v{
+    background-position: -16px -12px;
+}
+a.social-in{
+    background-position: 271px 53px;
+}
+.social a:hover{
+    opacity: 0.7;
+}
+/* --------------- /social --------------- */
