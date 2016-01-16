@@ -9,6 +9,7 @@
 
     <title>Title</title>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" href="css/swiper.css" />
     <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -36,7 +37,103 @@
         <!-- /site__header -->
 
         <!-- site__content -->
-        <div class="site__content">
+        <div class="site__content site__inner">
+
+            <!-- site__layout -->
+            <div class="site__layout">
+
+                <!-- description -->
+                <div class="description">
+                    Ни при каких обстоятельствах мы не будем разглашать личную информацию о подписчиках кому-либо без Вашего согласия. Это включает Ваше имя, адрес, номер телефона и адрес электронной почты. Мы обещаем хранить все подробности Вашего участия в полной конфиденциальности. Иногда мы можем связываться с Вами для подтверждения статуса вашего заказа, вопросам доставки или другим возникающим вопросам.
+                </div>
+                <!-- /description -->
+
+                <!-- site__wrap -->
+                <h1 class="site__wrap">Заказ уборки. Теперь это наша работа!</h1>
+                <!-- /site__wrap -->
+
+                <!-- steps -->
+                <ul class="steps">
+
+                    <!-- active -->
+                    <li class="active">
+                        <span>1</span>
+                        О квартире
+                    </li>
+                    <!-- /active -->
+
+                    <li>
+                        <span>2</span>
+                        Опции
+                    </li>
+                    <li>
+                        <span>3</span>
+                        Адрес и дата
+                    </li>
+                    <li>
+                        <span>4</span>
+                        Подтверждение
+                    </li>
+                    <li>
+                        <span>5</span>
+                        Оплата
+                    </li>
+                </ul>
+                <!-- /steps -->
+
+                <!-- step-item -->
+                <div class="step-item">
+
+                    <!-- step-item__title -->
+                    <h3 class="step-item__title">Давайте познакомимся</h3>
+                    <!-- /step-item__title -->
+
+                    <form method="get" action="#">
+
+                        <fieldset>
+                            <label for="flat-size">Площадь квартиры</label>
+                            <select name="flat-size" id="flat-size">
+                                <option value="< 45">< 45</option>
+                                <option value="= 45">= 45</option>
+                                <option value="> 45">> 45</option>
+                            </select>
+                        </fieldset>
+
+                        <fieldset>
+                            <label for="bathrooms">Площадь квартиры</label>
+                            <select name="bathrooms" id="bathrooms">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </fieldset>
+
+                        <fieldset>
+                            <label for="name">Ваше имя</label>
+                            <input type="text" name="name" id="name"/>
+                        </fieldset>
+
+                        <fieldset>
+                            <label for="phone">Телефон</label>
+                            <input type="tel" name="phone" id="phone" placeholder="+7 (***)-***-**-**"/>
+                        </fieldset>
+
+                        <fieldset>
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email"/>
+                        </fieldset>
+
+                        <!-- btn -->
+                        <button class="btn btn__next" name="next">Дальше</button>
+                        <!-- /btn -->
+
+                    </form>
+
+                </div>
+                <!-- /step-item -->
+
+            </div>
+            <!-- /site__layout -->
 
         </div>
         <!-- /site__content -->
