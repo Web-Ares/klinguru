@@ -74,12 +74,17 @@ input[type="search"]::-webkit-search-cancel-button {
     height: 140px;
 }
 .site__header {
+    height: 125px;
+    background-color: #fff;
+    z-index: 3;
+}
+.site__header-layout{
     position: relative;
     width: 940px;
-    height: 125px;
+    padding-top: 70px;
+    height: inherit;
     margin: 0 auto;
     z-index: 3;
-    padding-top: 70px;
 }
 .header__menu{
     text-align: right;
@@ -138,7 +143,11 @@ a.site__header-town:hover{
 .site__layout{
     position: relative;
     width: 940px;
+    padding-top: 26px;
+    padding-right: 300px;
+    min-height: 541px;
     margin: 0 auto;
+    text-align: left;
 }
 .site__footer {
     background: #003669;
@@ -227,6 +236,10 @@ a.site__header-town:hover{
     font-weight: 400;
     text-align: center;
     margin-bottom: 30px;
+}
+.site__title_inner{
+    margin-bottom: 20px;
+    text-align: left;
 }
 .step-item__descr{
     font-size: 16px;
@@ -674,10 +687,95 @@ span.reviews__purity{
 .description{
     position: absolute;
     top: 0;
-    bottom: 0;
-    background: url("../img/bg-description.jpg") no-repeat auto 100%;
+    left: 100%;
+    width: 791px;
+    height: 541px;
+    padding: 17px 21px 0;
+    margin-left: -300px;
+    background: url("../img/bg-description.jpg") no-repeat;
+    background-size: cover;
+    box-shadow: -5px 0 7px rgba(0,0,0,.1);
+}
+.description__content{
+    width: 270px;
+    font-size: 14px;
+    line-height: 18px;
 }
 /* --------------- /description --------------- */
+
+/* --------------- steps --------------- */
+.steps{
+    position: relative;
+    margin-bottom: 29px;
+}
+.steps:after{
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: 38px;
+    right: 92px;
+    height: 1px;
+    background-color: #e3e3e3;
+    z-index: -1;
+}
+.steps li{
+    display: inline-block;
+    margin-right: 45px;
+    font-size: 16px;
+    text-align: center;
+    color: #acacac;
+}
+.steps span{
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0 auto 7px;
+    padding-top: 3px;
+    border-radius: 50px;
+    color: #fff;
+    background-color: #e3e3e3;
+}
+.steps li.active{
+    color: #f59030;
+}
+.steps li.active span{
+    background-color: #f59030;
+}
+.steps li.done{
+    color: #508e4f;
+}
+.steps li.done span{
+    background-color: #508e4f;
+}
+/* --------------- steps --------------- */
+
+/* --------------- step-item --------------- */
+.step-item fieldset{
+    height: 42px;
+    margin-bottom: 8px;
+}
+.step-item label{
+    display: inline-block;
+    vertical-align: top;
+    width: 212px;
+    height: inherit;
+    padding-top: 16px;
+    font-size: 14px;
+}
+.step-item input{
+    width: 290px;
+    vertical-align: top;
+    height: inherit;
+    padding: 0 12px;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    font: 18px 'PT Sans', sans-serif;
+}
+.step-item__title{
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+/* --------------- /step-item --------------- */
 
 /* --------------- social --------------- */
 .social{
