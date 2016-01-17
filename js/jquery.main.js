@@ -84,6 +84,7 @@ var Slider = function (obj) {
         var _slider1 = new Swiper(_obj, {
             nextButton: '.reviews__next',
             prevButton: '.reviews__prev',
+            autoplay: 10000,
             loop: true,
             paginationClickable: true
 

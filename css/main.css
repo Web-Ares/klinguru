@@ -81,7 +81,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .site__header-layout{
     position: relative;
     width: 940px;
-    padding-top: 70px;
+    padding-top: 71px;
     height: inherit;
     margin: 0 auto;
     z-index: 3;
@@ -101,12 +101,16 @@ input[type="search"]::-webkit-search-cancel-button {
 .header__menu a:hover{
     text-decoration: none;
 }
+a.site__header-present{
+    margin-left: 104px;
+}
 a.site__header-present:before{
     content: "";
     position: absolute;
-    left: -35px;
-    width:40px;
-    height:18px;
+    top: -2px;
+    left: -44px;
+    width: 31px;
+    height: 21px;
     background:url(../img/present.png) no-repeat;
     background-size: contain;
 }
@@ -114,6 +118,7 @@ a.site__header-town{
     text-decoration: none;
     border-bottom: 1px dotted #000;
     margin-right: 100px;
+    padding-bottom: 4px;
     transition: border .3s ease;
 }
 a.site__header-town:after{
@@ -163,11 +168,11 @@ a.site__header-town:hover{
     width: 940px;
     height: 140px;
     margin: 0 auto;
-    padding-top: 23px;
+    padding-top: 24px;
 }
 .site__footer-copyright{
     position: absolute;
-    bottom: 20px;
+    bottom: 24px;
     left: 0;
     color: #fff;
 }
@@ -175,6 +180,7 @@ a.site__header-town:hover{
     display: block;
     font-size: 18px;
     margin-bottom: 10px;
+    letter-spacing: 0.2px;
 }
 .site__footer-copyright a{
     display: inline-block;
@@ -195,13 +201,13 @@ a.site__header-town:hover{
 .site__footer-pay span{
     display: block;
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 19px;
 }
 .site__footer-pay .visa,
 .site__footer-pay .master-cart{
     display: inline-block;
     vertical-align: middle;
-    width: 60px;
+    width: 65px;
     height: 42px;
     background: url("../img/pay01.png") no-repeat ;
     background-size: contain;
@@ -220,13 +226,14 @@ a.site__header-town:hover{
 .footer__menu{
     display: inline-block;
     vertical-align: top;
-    width: 430px;
+    width: 443px;
     text-align: justify;
-    margin-right: 26px;
+    margin-right: 32px;
 }
 .footer__menu a{
     color: #fff;
-    margin-right: 20px;
+    margin-right: 24px;
+    letter-spacing: 0.9px;
 }
 .footer__menu a:hover{
     text-decoration: underline;
@@ -235,7 +242,7 @@ a.site__header-town:hover{
     font-size: 30px;
     font-weight: 400;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 .site__title_inner{
     margin-bottom: 20px;
@@ -338,16 +345,15 @@ a.site__header-town:hover{
 /* --------------- slider --------------- */
 .slider {
     position: relative;
-    margin: 0 auto;
+    margin: 0 auto 26px;
     overflow: hidden;
-    margin-bottom: 30px;
 }
 .slider__layout {
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 576px;
+    height: 573px;
     margin: 0 auto;
 }
 .slider .slider__icon {
@@ -363,7 +369,7 @@ a.site__header-town:hover{
     width: 330px;
     height: 576px;
     left: 50%;
-    margin-left: 202px;
+    margin-left: 147px;
     z-index: 4;
     color: #fff;
 }
@@ -372,33 +378,33 @@ a.site__header-town:hover{
     top: 0;
     left: 0;
     width: 330px;
-    height: 576px;
+    height: 572px;
     background: rgba(126, 167, 126, 0.55);
-    padding: 22px 22px 0 22px;
+    padding: 34px 22px 0 22px;
     text-align: center;
     z-index: 3;
 }
 .ban__item h2 {
     font-size: 40px;
     line-height: 46px;
-    margin-bottom: 37px;
+    margin-bottom: 12px;
     font-weight: 400;
 }
 .ban__item h3 {
     position: relative;
     font-size: 24px;
     font-weight: 400;
-    margin-bottom: 20px;
-    padding-bottom: 40px;
-
+    line-height: 31px;
+    margin-bottom: 28px;
+    padding-bottom: 36px;
 }
 .ban__item h3:before{
     content: "";
     position: absolute;
     bottom: 0;
-    width: 100px;
+    width: 112px;
     left: 50%;
-    margin-left: -50px;
+    margin-left: -56px;
     height: 1px;
     background: #fff;
 }
@@ -407,7 +413,7 @@ a.site__header-town:hover{
     font-weight: 400;
     font-size: 20px;
     line-height: 19px;
-    margin-bottom: 28px;
+    margin-bottom: 27px;
 }
 .ban__item input{
     display: block;
@@ -441,47 +447,51 @@ a.site__header-town:hover{
 /* --------------- /let-do --------------- */
 .let-do{
     width: 940px;
-    margin: 0 auto 60px;
+    margin: 0 auto 30px;
 }
 .let-do__item{
     display: inline-block;
     vertical-align: top;
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: 2px 1px;
     padding-left:80px;
     padding-right:20px;
     width: 33%;
-    margin-bottom: 20px;
+    margin-bottom: 34px;
+}
+.let-do__item_bg{
+    background-position: 9px 1px;
 }
 .let-do__item span:first-child{
     display: block;
     vertical-align: top;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 22px;
+    letter-spacing: -0.5px;
 }
 .let-do__item span:last-child{
     font-size: 16px;
-    line-height: 20px;
+    line-height: 18px;
 }
 /* --------------- /let-do --------------- */
 
 /* --------------- what-exactly --------------- */
 .what-exactly{
-    width: 940px;
-    margin: 0 auto 60px;
+    width: 945px;
+    margin: 0 auto 25px;
 }
 .what-exactly__item {
     position: relative;
     border: 2px solid #048ced;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 .what-exactly__item dt {
     background-repeat: no-repeat;
-    background-position: 10px 10px;
+    background-position: 16px 13px;
     height: 60px;
     padding-top: 17px;
     position: relative;
-    padding-left: 60px;
+    padding-left: 70px;
     font-size: 24px;
     font-weight: bold;
     color: #048ced;
@@ -491,7 +501,7 @@ a.site__header-town:hover{
     display: none;
     margin-left: 23px;
     padding-bottom: 1px;
-    margin-bottom: 26px;
+    margin-bottom: 2px;
 }
 .what-exactly__item .open:before {
     transform: rotate(0deg);
@@ -503,19 +513,19 @@ a.site__header-town:hover{
     content: "";
     position: absolute;
     background: #048ced;
-    width: 14px;
+    top: 29px;
+    right: 26px;
+    width: 10px;
     height: 2px;
-    right: 18px;
-    top: 30px;
 }
 .what-exactly__item dt:before {
     content: "";
     position: absolute;
-    width: 14px;
-    height: 2px;
-    right: 18px;
-    top: 30px;
     background: #048ced;
+    top: 29px;
+    right: 26px;
+    width: 10px;
+    height: 2px;
     transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     transition: transform .3s ease;
@@ -523,17 +533,22 @@ a.site__header-town:hover{
 }
 .what-exactly__item ul {
     width: 100%;
-    margin-left: 26px;
+    padding-left: 26px;
     margin-bottom: 14px;
+    margin-top: 20px;
 }
 .what-exactly__item ul>li {
     display: inline-block;
     vertical-align: top;
     position: relative;
-    width: 49%;
+    width: 420px;
     line-height: 19px;
-    margin-top: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 40px;
+}
+.what-exactly__item ul>li:nth-child(even){
+    margin-left: 46px;
 }
 .what-exactly__item ul>li:before {
     content: '';
@@ -542,7 +557,7 @@ a.site__header-town:hover{
     height: 16px;
     background: url("../img/gamburg-li.png") no-repeat ;
     top: 2px;
-    left: -25px;
+    left: -16px;
 }
 /* --------------- /what-exactly --------------- */
 
@@ -550,14 +565,24 @@ a.site__header-town:hover{
 .reviews{
     position: relative;
     width: 940px;
-    margin: 0 auto 60px;
+    margin: 0 auto 32px;
+}
+.reviews a:last-child{
+    margin-bottom: 32px;
+}
+.reviews__layout{
+    padding-left: 8px;
+    margin-bottom: 4px;
 }
 .reviews__item{
     display: inline-block;
     vertical-align: top;
-    width: 49%;
+    width: 450px;
     font-size: 16px;
-    margin-bottom: 40px;
+    margin-bottom: 67px;
+}
+.reviews__item:nth-child(even){
+    margin-left: 25px;
 }
 .reviews__item div{
     display: inline-block;
@@ -569,23 +594,25 @@ a.site__header-town:hover{
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    margin-right: 20px;
+    margin-right: 26px;
+    margin-top: 4px;
 }
 .reviews__name{
-    width: 290px;
+    width: 297px;
 }
 .reviews__name span{
     display: block;
 }
 .reviews__name span:first-child{
     font-style: italic;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
+    line-height: 18px;
 }
 span.reviews__purity{
    display: block;
    font-size: 18px;
    text-align: center;
-    margin-bottom: 20px;
+   margin-bottom: 26px;
 }
 .reviews__next,
 .reviews__prev{
@@ -594,16 +621,15 @@ span.reviews__purity{
     position: absolute;
     width: 45px;
     height: 45px;
-    top: 50%;
-    left: -100px;
-    margin: -20px 0 0 -13px;
+    top: 227px;
+    left: -66px;
     z-index: 3;
 }
 .reviews__next{
     background: url("../img/slider-icon01.png") no-repeat;
     background-size: contain;
     left: auto;
-    right: -100px;
+    right: -66px;
 }
 /* --------------- reviews --------------- */
 
@@ -629,8 +655,8 @@ span.reviews__purity{
     text-decoration: none;
     color: #fff;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
-    border: 1px solid #f26522;
-    margin-top: 20px;
+    border: 3px solid #f26522;
+    margin-top: 28px;
 }
 .btn:before {
     content: "";
@@ -666,7 +692,7 @@ span.reviews__purity{
     height: 50px;
     border: none;
     text-align: center;
-    margin: 0 auto 40px;
+    margin: 0 auto 57px;
     padding-top: 16px;
 }
 .btn_order:before {
@@ -678,8 +704,8 @@ span.reviews__purity{
 /* --------------- logo --------------- */
 .logo {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 14px;
+    left: -11px;
 }
 /* --------------- /logo --------------- */
 
@@ -784,21 +810,22 @@ span.reviews__purity{
     width: 150px;
     font-size: 18px;
     color:#fff;
-    margin-right: 100px;
+    margin-right: 87px;
 }
 .social span{
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 19px;
 }
 .social a{
     display: inline-block;
     vertical-align: top;
+    background: url("../img/social-icon.png");
+    background-position: -73px -12px;
     width: 40px;
     height: 40px;
     border-radius: 4px;
-    background: url("../img/social-icon.png");
-    background-position: -73px -12px;
     transition: opacity .3s ease;
+    margin-right: 5px;
 }
 a.social-v{
     background-position: -16px -12px;
