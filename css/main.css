@@ -839,15 +839,17 @@ span.reviews__purity{
 }
 .step-item .step-item-house fieldset{
     width: 150px;
-    margin-right: 20px;
+    margin-right: 25px;
 }
 .step-item .step-item-house fieldset:last-child{
     margin-right: 0;
 }
 .step-item .step-item-house fieldset  label{
-
+    margin-right: 5px;
 }
-
+.step-item .step-item-house fieldset:first-child label{
+    margin-right: 29px;
+}
 /* --------------- /step-item --------------- */
 
 /* --------------- social --------------- */
