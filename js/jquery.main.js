@@ -21,6 +21,8 @@ $(function(){
 
         return false;
     })
+
+
 } );
 
 var Shablon = function (obj) {
