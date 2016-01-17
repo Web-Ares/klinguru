@@ -48,7 +48,8 @@
 
             <!-- description -->
             <div class="description">
-                Ни при каких обстоятельствах мы не будем разглашать личную информацию о подписчиках кому-либо без Вашего согласия. Это включает Ваше имя, адрес, номер телефона и адрес электронной почты. Мы обещаем хранить все подробности Вашего участия в полной конфиденциальности. Иногда мы можем связываться с Вами для подтверждения статуса вашего заказа, вопросам доставки или другим возникающим вопросам.
+                Мы наведём в вашей квартире идеальную чистоту. Если хотите, мы можем сделать даже больше! Просто
+                выберите нужные пункты.
             </div>
             <!-- /description -->
 
@@ -94,10 +95,56 @@
 
                 <!--step-item__date-->
                 <div class="step-item__date">
+                    <form>
+                        <fieldset class="step-item-datepicker">
+                            <label>Дата</label>
+                                <input type="text" id="datepicker">
+                        </fieldset>
+                        <fieldset class="step-item-time">
+                            <label>Время</label>
+                            <select>
+                                <option>Время 1</option>
+                                <option>Время 2</option>
+                                <option>Время 3</option>
+                                <option>Время 4</option>
+                                <option>Время 5</option>
+                            </select>
+                        </fieldset>
 
-                    <input type="text" id="datepicker">
-
-
+                        <!-- step-item__title -->
+                        <h3 class="step-item__title">Добавьте адрес</h3>
+                        <!-- /step-item__title -->
+                        <div>
+                            <fieldset class="step-item-city">
+                                <label>Город</label>
+                                <select>
+                                    <option>Город 1</option>
+                                    <option>Город 2</option>
+                                    <option>Город 3</option>
+                                    <option>Город 4</option>
+                                    <option>Город 5</option>
+                                </select>
+                            </fieldset>
+                            <fieldset class="step-item-city">
+                                    <label for="street">Улица</label>
+                                    <input type="text" id="street">
+                            </fieldset>
+                        </div>
+                        <div class="step-item-house">
+                            <fieldset>
+                                <label for="house">Дом</label>
+                                <input type="text" id="house">
+                            </fieldset>
+                            <fieldset>
+                                <label for="build">Строение</label>
+                                <input type="text" id="build">
+                            </fieldset>
+                            <fieldset>
+                                <label for="flat">Квартира</label>
+                                <input type="text" id="flat">
+                            </fieldset>
+                        </div>
+                    </form>
                 </div>
                 <!--/step-item__date-->
 

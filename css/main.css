@@ -373,6 +373,15 @@ a.site__header-town:hover{
     z-index: 4;
     color: #fff;
 }
+.step-item__date{
+
+}
+.step-item__date fieldset{
+    height: 40px;
+}
+.step-item .step-item-datepicker input{
+    width: 140px;
+}
 .ban__item {
     position: absolute;
     top: 0;
@@ -778,7 +787,9 @@ span.reviews__purity{
 /* --------------- step-item --------------- */
 .step-item fieldset{
     height: 42px;
-    margin-bottom: 8px;
+    margin-bottom: 34px;
+    display: inline-block;
+    margin-right: 37px;
 }
 .step-item label{
     display: inline-block;
@@ -788,7 +799,7 @@ span.reviews__purity{
     padding-top: 16px;
     font-size: 14px;
 }
-.step-item input{
+.step-item input, .step-item select{
     width: 290px;
     vertical-align: top;
     height: inherit;
@@ -797,10 +808,46 @@ span.reviews__purity{
     border-radius: 5px;
     font: 18px 'PT Sans', sans-serif;
 }
+.step-item .step-item-time{
+
+}
 .step-item__title{
     font-size: 22px;
     margin-bottom: 25px;
 }
+.step-item__date label{
+    width: auto;
+    margin-right: 17px;
+}
+.step-item .step-item-time label{
+    margin-right: 12px;
+}
+.step-item .step-item-time select{
+    width: 138px;
+}
+.step-item .step-item-city select, .step-item .step-item-city input{
+    width: 228px;
+}
+.step-item .step-item-city{
+    margin-bottom: 9px;
+}
+.step-item .step-item-city:last-child{
+    margin-right: 0;
+}
+.step-item .step-item-house input{
+    width: 70px;
+}
+.step-item .step-item-house fieldset{
+    width: 150px;
+    margin-right: 20px;
+}
+.step-item .step-item-house fieldset:last-child{
+    margin-right: 0;
+}
+.step-item .step-item-house fieldset  label{
+
+}
+
 /* --------------- /step-item --------------- */
 
 /* --------------- social --------------- */

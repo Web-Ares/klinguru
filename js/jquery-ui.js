@@ -2396,10 +2396,6 @@
 	};
 	$.datepicker.setDefaults($.datepicker.regional['ru']);
 
-	$('#datepicker').datepicker({
-		showOn: 'both',
-		buttonImageOnly: true,
-		buttonImage: '/images/026.png'
-	});
+	$('#datepicker').datepicker();
 
 }));
