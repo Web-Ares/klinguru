@@ -381,6 +381,9 @@ a.site__header-town:hover{
 }
 .step-item .step-item-datepicker input{
     width: 140px;
+    background-image: url("../img/arrow-input.png");
+    background-repeat: no-repeat;
+    background-position: 111px 19px;
 }
 .ban__item {
     position: absolute;

@@ -317,7 +317,7 @@ button.ui-button::-moz-focus-inner {
 }
 .ui-widget{
 	position: absolute !important;
-	top: 344px !important;
+	top: 378px !important;
 	left: 259px !important;
 	z-index: 3 !important;
 	font-size: 10px !important;
@@ -883,6 +883,7 @@ body .ui-tooltip {
 .ui-widget-content {
 	border: 1px solid #dddddd;
 	color: #333333;
+	background: #fff;
 }
 .ui-widget-content a {
 	color: #333333;
@@ -890,10 +891,11 @@ body .ui-tooltip {
 	width: 19px;
 }
 .ui-widget-header {
-	/* border: 1px solid #e78f08; */
+
 	color: #ffffff;
 	font-weight: bold;
 	height: 24px;
+	background: #508e4f;
 }
 .ui-widget-header a {
 	color: #ffffff;
