@@ -946,10 +946,7 @@ a.social-in{
 /* --------------- /social --------------- */
 
 .step-item__pay{
-}
-ul.add-your__rating li {
-    position: relative;
-    display: block;
+    margin-bottom: 26px;
 }
 .step-item__pay input[type="radio"] {
     display: none;
@@ -959,11 +956,11 @@ ul.add-your__rating li {
     display: block;
     z-index: 3;
 }
-input[type="radio"]:checked + label > .step-item__in-cash {
+.step-item__pay input[type="radio"]:checked + label > .step-item__in-cash {
      border: 2px solid #f59030;
      background: #fff;
  }
-input[type="radio"]:checked + label > .step-item__in-cash:before{
+.step-item__pay input[type="radio"]:checked + label > .step-item__in-cash:before{
     content: "";
     position: absolute;
     top: 10px;
