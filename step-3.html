@@ -15,9 +15,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/jquery-ui.css" />
 
-    <script>
 
-    </script>
 </head>
 <body>
 
@@ -27,15 +25,26 @@
     <!-- header__menu -->
     <header class="site__header">
 
-        <!-- logo -->
-        <h1 class="logo"><img src="img/logo.png" width="" height="" alt=""></h1>
-        <!-- /logo -->
+        <!-- site__header-layout -->
+        <div class="site__header-layout">
 
-        <!-- header__menu -->
-        <nav class="header__menu">
-            <a href="#"></a>
-        </nav>
-        <!-- /header__menu -->
+            <!-- logo -->
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="cleangaroo">
+            </a>
+            <!-- /logo -->
+
+            <!-- header__menu -->
+            <nav class="header__menu">
+                <a class="site__header-town" href="#">Уфа</a>
+                <a class="site__header-present" href="#">Подарочный сертификат</a>
+                <a href="#">О сервисе</a>
+                <a href="#">Вопросы-Ответы</a>
+            </nav>
+            <!-- /header__menu -->
+
+        </div>
+        <!-- site__header-layout -->
 
     </header>
     <!-- /site__header -->
@@ -54,24 +63,24 @@
             <!-- /description -->
 
             <!-- site__wrap -->
-            <h1 class="site__wrap">Заказ уборки. Теперь это наша работа!</h1>
+            <h1 class="site__title site__title_inner">Заказ уборки. Теперь это наша работа!</h1>
             <!-- /site__wrap -->
 
             <!-- steps -->
             <ul class="steps">
 
                 <!-- active -->
-                <li class="active">
+                <li class="done">
                     <span>1</span>
                     О квартире
                 </li>
                 <!-- /active -->
 
-                <li>
+                <li class="done">
                     <span>2</span>
                     Опции
                 </li>
-                <li>
+                <li class="active">
                     <span>3</span>
                     Адрес и дата
                 </li>
@@ -102,6 +111,7 @@
                         </fieldset>
                         <fieldset class="step-item-time">
                             <label>Время</label>
+
                             <select>
                                 <option>Время 1</option>
                                 <option>Время 2</option>
@@ -109,6 +119,7 @@
                                 <option>Время 4</option>
                                 <option>Время 5</option>
                             </select>
+
                         </fieldset>
 
                         <!-- step-item__title -->

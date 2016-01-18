@@ -250,10 +250,10 @@ a.site__header-town:hover{
 }
 .step-item__descr{
     font-size: 16px;
+    display: inline-block;
+    margin-bottom: 24px;
 }
-.step-item__selects{
 
-}
 .step-item__selects form {
     margin-bottom: 28px;
 }
