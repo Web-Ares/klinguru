@@ -240,14 +240,14 @@ button.ui-button-icons-only {
 }
 .ui-datepicker{
 	position: absolute !important;
-	top: 378px !important;
-	left: 259px !important;
+	margin-top: 14px !important;
 	z-index: 3 !important;
 	font-size: 10px !important;
 	width: 151px !important;
 	padding: 0;
 	border: 1px solid #dddddd !important;
 	border-radius: 4px;
+	font-family: 'PT Sans', sans-serif;
 }
 /* button text element */
 .ui-button .ui-button-text {
@@ -336,6 +336,7 @@ button.ui-button::-moz-focus-inner {
 	font-size: 10px;
 	/*border: 1px solid #dddddd;*/
 	border-radius: 4px;
+	font-size: 14px;
 }
 .ui-datepicker .ui-datepicker-prev,
 .ui-datepicker .ui-datepicker-next {
