@@ -8,6 +8,18 @@ $(function(){
         Slidedown($(this));
     });
 
+    $('select').each(function () {
+        NiceSelect($(this));
+    });
+
+    $('#datepicker').each(function () {
+        Datapiker($(this));
+    });
+
+    $('input[id=phone]').each(function () {
+        Mask($(this));
+    });
+
     $(".step-item__selects label").click(function(event){
         if($(this).hasClass('active')){
             $(this).removeClass('active');
@@ -22,41 +34,93 @@ $(function(){
         return false;
     })
 
-
 } );
 
-var Shablon = function (obj) {
-    this.obj = obj;
+var NiceSelect = function (obj) {
+    //private properties
+    var _self = this,
+        _obj = obj;
 
-
-    this.init();
-};
-Shablon.prototype = {
-    init: function () {
-        var self = this;
-
-        self.core = self.core();
-        self.core.build();
-    },
-    core: function () {
-        var self = this;
-
-        return {
-            addEvents: function () {
-
-            },
-            build: function () {
-                self.core.addEvents();
-            }
+    //private methods
+    var _addEvents = function () {
+            _obj.selectmenu()
+                .selectmenu( "menuWidget" )
+                .addClass( "overflow" );
+        },
+        _init = function () {
+            _addEvents();
         };
-    }
+
+    //public properties
+
+    //public methods
+
+
+    _init();
 };
 
-$(window).on({
-    load: function () {
-        
-    }
-});
+var Datapiker = function (obj) {
+
+    //private properties
+    var _self = this,
+        datepicker = $.datepicker,
+        _obj = obj;
+
+    //private methods
+    var _addEvents = function () {
+            datepicker.regional['ru'] = {
+                closeText: 'Закрыть',
+                prevText: '&#x3c;Пред',
+                nextText: 'След&#x3e;',
+                currentText: 'Сегодня',
+                monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь',
+                    'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+                monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн',
+                    'Июл','Авг','Сен','Окт','Ноя','Дек'],
+                dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+                dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+                dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+                dateFormat: 'dd.mm.yy',
+                firstDay: 1,
+                isRTL: false
+            };
+            datepicker.setDefaults($.datepicker.regional['ru']);
+
+            obj.datepicker();
+        },
+        _init = function () {
+            _addEvents();
+        };
+
+    //public properties
+
+    //public methods
+
+
+    _init();
+};
+
+var Mask = function (obj) {
+
+    //private properties
+    var _self = this,
+        _obj = obj;
+
+    //private methods
+    var _addEvents = function () {
+            _obj.inputmask("+7 ( 999 ) - 999 - 99 - 99");
+        },
+        _init = function () {
+            _addEvents();
+        };
+
+    //public properties
+
+    //public methods
+
+
+    _init();
+};
 
 var Slider = function (obj) {
 

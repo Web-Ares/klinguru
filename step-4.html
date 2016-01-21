@@ -72,25 +72,31 @@
                 <!-- steps -->
                 <ul class="steps">
 
-                    <!-- active -->
-                    <li class="active">
+                    <!-- done -->
+                    <li class="done">
                         <span>1</span>
                         О квартире
                     </li>
-                    <!-- /active -->
-
-                    <li>
+                    <!-- /done -->
+                    <!-- done -->
+                    <li class="done">
                         <span>2</span>
                         Опции
                     </li>
-                    <li>
+                    <!-- /done -->
+                    <!-- done -->
+                    <li class="done">
                         <span>3</span>
                         Адрес и дата
                     </li>
-                    <li>
+                    <!-- done -->
+                    <!-- active -->
+                    <li class="active">
                         <span>4</span>
                         Подтверждение
                     </li>
+                    <!-- /active -->
+
                     <li>
                         <span>5</span>
                         Оплата
@@ -102,38 +108,21 @@
                 <div class="step-item">
 
                     <!-- step-item__title -->
-                    <h3 class="step-item__title">Давайте познакомимся</h3>
+                    <h3 class="step-item__title">Проверьте данные</h3>
                     <!-- /step-item__title -->
 
+                    <dl>
+                        <dt>
+                            Параметры квартиры
+                        </dt>
+                        <dd>
+                            <p>До 60 м2</p>
+                            <p>Дополнительно: помыть внутри холодильника</p>
+                        </dd>
+                    </dl>
+
+
                     <form method="get" action="#">
-
-                        <fieldset>
-                            <label for="flat-size">Площадь квартиры</label>
-                            <select name="flat-size" id="flat-size">
-                                <option value="< 45">< 45</option>
-                                <option value="= 45">= 45</option>
-                                <option value="> 45">> 45</option>
-                            </select>
-                        </fieldset>
-
-                        <fieldset>
-                            <label for="bathrooms">Площадь квартиры</label>
-                            <select name="bathrooms" id="bathrooms">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                        </fieldset>
-
-                        <fieldset>
-                            <label for="name">Ваше имя</label>
-                            <input type="text" name="name" id="name"/>
-                        </fieldset>
-
-                        <fieldset>
-                            <label for="phone">Телефон</label>
-                            <input type="tel" name="phone" id="phone" placeholder="+7 ( ___ ) - ___ - __ - __"/>
-                        </fieldset>
 
                         <fieldset>
                             <label for="email">E-mail</label>

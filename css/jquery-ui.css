@@ -315,25 +315,17 @@ button.ui-button::-moz-focus-inner {
 	padding: .2em .2em 0;
 	display: none;
 }
-.ui-widget{
-	position: absolute !important;
-	top: 378px !important;
-	left: 259px !important;
-	z-index: 3 !important;
-	font-size: 10px !important;
-	width: 151px !important;
-	padding: 0;
-	border: 1px solid #dddddd !important;
-	border-radius: 4px;
-}
-
 .ui-datepicker .ui-datepicker-header {
 	position: relative;
 	padding: 0;
 	padding-top: 0px;
 	padding-left: 5px;
-	font-size: 14px;
 	height: 23px;
+	width: 151px;
+	z-index: 3;
+	font-size: 10px;
+	border: 1px solid #dddddd;
+	border-radius: 4px;
 }
 .ui-datepicker .ui-datepicker-prev,
 .ui-datepicker .ui-datepicker-next {
@@ -571,37 +563,6 @@ button.ui-button::-moz-focus-inner {
 .ui-draggable .ui-dialog-titlebar {
 	cursor: move;
 }
-.ui-menu {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	display: block;
-	outline: none;
-}
-.ui-menu .ui-menu {
-	position: absolute;
-}
-.ui-menu .ui-menu-item {
-	position: relative;
-	margin: 0;
-	padding: 3px 1em 3px .4em;
-	cursor: pointer;
-	min-height: 0; /* support: IE7 */
-	/* support: IE10, see #8844 */
-	list-style-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
-}
-.ui-menu .ui-menu-divider {
-	margin: 5px 0;
-	height: 0;
-	font-size: 0;
-	line-height: 0;
-	border-width: 1px 0 0 0;
-}
-.ui-menu .ui-state-focus,
-.ui-menu .ui-state-active {
-	margin: -1px;
-}
-
 /* icon support */
 .ui-menu-icons {
 	position: relative;
@@ -641,55 +602,6 @@ button.ui-button::-moz-focus-inner {
 }
 .ui-progressbar-indeterminate .ui-progressbar-value {
 	background-image: none;
-}
-.ui-selectmenu-menu {
-	padding: 0;
-	margin: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: none;
-}
-.ui-selectmenu-menu .ui-menu {
-	overflow: auto;
-	/* Support: IE7 */
-	overflow-x: hidden;
-	padding-bottom: 1px;
-}
-.ui-selectmenu-menu .ui-menu .ui-selectmenu-optgroup {
-	font-size: 1em;
-	font-weight: bold;
-	line-height: 1.5;
-	padding: 2px 0.4em;
-	margin: 0.5em 0 0 0;
-	height: auto;
-	border: 0;
-}
-.ui-selectmenu-open {
-	display: block;
-}
-.ui-selectmenu-button {
-	display: inline-block;
-	overflow: hidden;
-	position: relative;
-	text-decoration: none;
-	cursor: pointer;
-}
-.ui-selectmenu-button span.ui-icon {
-	right: 0.5em;
-	left: auto;
-	margin-top: -8px;
-	position: absolute;
-	top: 50%;
-}
-.ui-selectmenu-button span.ui-selectmenu-text {
-	text-align: left;
-	padding: 0.4em 2.1em 0.4em 1em;
-	display: block;
-	line-height: 1.4;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
 }
 .ui-slider {
 	position: relative;
@@ -866,15 +778,10 @@ body .ui-tooltip {
 
 /* Component containers
 ----------------------------------*/
-.ui-widget {
-	font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
-	font-size: 1.1em;
-}
 .ui-widget .ui-widget {
 	font-size: 1em;
 }
 .ui-widget input,
-.ui-widget select,
 .ui-widget textarea,
 .ui-widget button {
 	font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
@@ -903,7 +810,6 @@ body .ui-tooltip {
 
 /* Interaction states
 ----------------------------------*/
-.ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
 	border: none;
@@ -926,10 +832,7 @@ body .ui-tooltip {
 .ui-state-focus,
 .ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
-	border: none;
-	background: #8ec98d url("images/ui-bg_glass_100_fdf5ce_1x400.png") 50% 50% repeat-x;
-	font-weight: bold;
-	color: #c77405;
+
 }
 .ui-state-hover a,
 .ui-state-hover a:hover,
@@ -1020,7 +923,6 @@ tr {
 /* states and images */
 .ui-icon {
 	width: 16px;
-	height: 16px;
 }
 .ui-icon,
 .ui-widget-content .ui-icon {

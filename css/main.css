@@ -214,7 +214,6 @@ a.site__header-town:hover{
     background: url("../img/pay01.png") no-repeat ;
     background-size: contain;
     transition: opacity .3s ease;
-
 }
 .site__footer-pay .visa{
     background: url("../img/pay02.png") no-repeat ;
@@ -255,7 +254,6 @@ a.site__header-town:hover{
     display: inline-block;
     margin-bottom: 24px;
 }
-
 .step-item__selects form {
     margin-bottom: 28px;
 }
@@ -377,9 +375,6 @@ a.site__header-town:hover{
     z-index: 4;
     color: #fff;
 }
-.step-item__date{
-
-}
 .step-item__date fieldset{
     height: 40px;
 }
@@ -449,7 +444,6 @@ a.site__header-town:hover{
     margin-left: 5px;
     opacity: 1;
     transition: background .3s ease, border .3s ease;
-
 }
 .swiper-pagination-clickable span:hover {
     background: #fff;
@@ -846,6 +840,7 @@ span.reviews__purity{
     height: 42px;
     margin-bottom: 34px;
     display: inline-block;
+    vertical-align: top;
     margin-right: 37px;
 }
 .step-item label{
@@ -865,9 +860,6 @@ span.reviews__purity{
     border-radius: 5px;
     font: 18px 'PT Sans', sans-serif;
 }
-.step-item .step-item-time{
-
-}
 .step-item__title{
     font-size: 22px;
     margin-bottom: 25px;
@@ -883,7 +875,8 @@ span.reviews__purity{
 .step-item .step-item-time select{
     width: 138px;
 }
-.step-item .step-item-city select, .step-item .step-item-city input{
+.step-item .step-item-city select,
+.step-item .step-item-city input{
     width: 228px;
 }
 .step-item .step-item-city{
@@ -907,6 +900,78 @@ span.reviews__purity{
 }
 .step-item .step-item-house fieldset:first-child label{
     margin-right: 29px;
+}
+.step-item .ui-selectmenu-button{
+    position:relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display:inline-block;
+    width:140px!important;
+    border:1px solid #dadada;
+    border-radius: 5px;
+    background-color: #fff;
+    line-height:39px
+}
+.step-item .ui-selectmenu-text{
+    width:180px;
+    padding:0 30px 0 10px;
+    font-size:18px;
+    font-weight: normal;
+    line-height:39px;
+    color: #acacac;
+}
+.step-item .ui-selectmenu-button .ui-icon{
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    width:20px;
+    cursor:pointer
+}
+.step-item .ui-selectmenu-button .ui-icon:after {
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(218, 218, 218, 0);
+    border-top-color: #dadada;
+    border-width: 5px;
+    margin-top: -2px;
+}
+.step-item .ui-corner-top .ui-icon{
+    background-position:0 16px
+}
+.ui-selectmenu-menu{
+    display:none;
+    position:absolute;
+    width:140px;
+    border:1px solid #dadada;
+    border-top:none;
+    background-color:#fff;
+    font-family: "opensanshebrew-regular", sans-serif;
+    overflow:hidden;
+    z-index: 3;
+}
+.ui-selectmenu-menu li{
+    font-size:16px;
+    line-height:24px;
+    padding: 0 10px;
+    cursor:pointer
+}
+.ui-selectmenu-menu .ui-state-focus{
+    background-color:#99bbdb
+}
+.ui-selectmenu-menu.ui-selectmenu-open{
+    display:block
+}
+.step-item .ui-selectmenu-text{
+    width:210px;
+    padding-right:20px
 }
 /* --------------- /step-item --------------- */
 
