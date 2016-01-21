@@ -111,23 +111,80 @@
                     <h3 class="step-item__title">Проверьте данные</h3>
                     <!-- /step-item__title -->
 
-                    <dl>
-                        <dt>
+                    <!-- data -->
+                    <dl class="data">
+                        <!-- data__flat -->
+                        <dt class="data__flat">
                             Параметры квартиры
                         </dt>
-                        <dd>
-                            <p>До 60 м2</p>
-                            <p>Дополнительно: помыть внутри холодильника</p>
-                        </dd>
-                    </dl>
+                        <!-- /data__flat -->
 
+                        <dd>
+                            <p>До 60 м<sup>2</sup></p>
+                            <p><span>Дополнительно:</span> помыть внутри холодильника</p>
+
+                            <!-- data__edit -->
+                            <a href="#" class="data__edit"></a>
+                            <!-- /data__edit -->
+                        </dd>
+
+                        <!-- data__data -->
+                        <dt class="data__data">
+                            Дата и время
+                        </dt>
+                        <!-- /data__data -->
+
+                        <dd>
+                            <p>Вторник, 10 января 2016</p>
+                            <p>14:00-18:00 (≈4часа)</p>
+
+                            <!-- data__edit -->
+                            <a href="#" class="data__edit"></a>
+                            <!-- /data__edit -->
+                        </dd>
+
+                        <!-- data__contact -->
+                        <dt class="data__contact">
+                            Контактные данные
+                        </dt>
+                        <!-- /data__contact -->
+
+                        <!-- data__contact-frame -->
+                        <dd class="data__contact-frame">
+                            <p>E-mail:  info@rector.msu.ru</p>
+                            <p>Город: Москва</p>
+                            <p>Адрес: Ленинские горы,  д. 1, Московский государственный университет имени М.В.Ломоносова</p>
+                            <p>Телефон:  +7(495) 939-10-00</p>
+                            <p>Ваше имя: Михаил</p>
+
+                            <!-- data__edit -->
+                            <a href="#" class="data__edit"></a>
+                            <!-- /data__edit -->
+                        </dd>
+                        <!-- /data__contact-frame -->
+
+                    </dl>
+                    <!-- /data -->
 
                     <form method="get" action="#">
 
-                        <fieldset>
-                            <label for="email">E-mail</label>
-                            <input type="email" name="email" id="email"/>
-                        </fieldset>
+                        <!-- step-item__promocode -->
+                        <div class="step-item__promocode">
+                            <fieldset>
+                                <label for="promocode">Промокод</label>
+                                <input type="text" name="promocode" id="promocode"/>
+                                <!-- btn -->
+                                <button class="btn btn_ok" name="promocode-ok">ОК</button>
+                                <!-- /btn -->
+                            </fieldset>
+                        </div>
+                        <!-- /step-item__promocode -->
+
+                        <!-- step-item__total -->
+                        <div class="step-item__total">
+                            Итого: 2800<span class="rub">Р</span>
+                        </div>
+                        <!-- /step-item__total -->
 
                         <fieldset>
                             <!-- btn -->
@@ -135,7 +192,7 @@
                             <!-- /btn -->
 
                             <!-- btn -->
-                            <button class="btn btn_next" name="next">Дальше</button>
+                            <button class="btn btn_next" name="next">Подтвердить</button>
                             <!-- /btn -->
                         </fieldset>
 

@@ -759,6 +759,32 @@ span.reviews__purity{
 .btn_prev:hover:after{
     left: 17px;
 }
+.btn_pay{
+    transition: opacity .3s ease;
+    -webkit-transition: opacity .3s ease;
+}
+.btn_pay:after{
+    top: 10px;
+    right: 16px;
+    width: 31px;
+    height: 31px;
+    background-image: url("../img/icons-rub.png");
+}
+.btn_pay:hover{
+    opacity: .7;
+}
+.btn_pay:hover:after{
+    right: 16px;
+}
+.btn_ok{
+    display: inline-block;
+    height: 42px;
+    padding: 0 20px;
+    border-radius: 3px;
+    background-color: #508e4f;
+    text-align: left;
+    overflow: hidden;
+}
 /* --------------- /btn --------------- */
 
 /* --------------- logo --------------- */
@@ -836,6 +862,9 @@ span.reviews__purity{
 /* --------------- steps --------------- */
 
 /* --------------- step-item --------------- */
+.step-item{
+    padding-right: 20px;
+}
 .step-item fieldset{
     height: 42px;
     margin-bottom: 34px;
@@ -900,6 +929,30 @@ span.reviews__purity{
 }
 .step-item .step-item-house fieldset:first-child label{
     margin-right: 29px;
+}
+.step-item__promocode{
+    margin-bottom: 29px;
+    padding: 4px 21px;
+    border: 1px solid #e3e3e3;
+}
+.step-item__promocode fieldset{
+    margin-bottom: 73px;
+}
+.step-item__promocode label{
+    display: block;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+.step-item__promocode input{
+    margin-right: 10px;
+}
+.step-item__total{
+    margin-bottom: 23px;
+    font-size: 18px;
+    color: #008f49;
+}
+.step-item__total .rub{
+    text-decoration: line-through;
 }
 .step-item .ui-selectmenu-button{
     position:relative;
@@ -974,6 +1027,103 @@ span.reviews__purity{
     padding-right:20px
 }
 /* --------------- /step-item --------------- */
+
+/* --------------- data --------------- */
+.data{
+    margin-bottom: 40px;
+}
+.data dt{
+    margin-bottom: 12px;
+    padding-left: 42px;
+    font-size: 18px;
+    line-height: 40px;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+}
+.data dd{
+    display: block;
+    position: relative;
+    margin-bottom: 18px;
+    padding: 10px 22px 17px;
+    font-size: 14px;
+    line-height: 27px;
+    background-color: #eee;
+}
+.data dd sup{
+    font-size: 10px;
+}
+.data dd span{
+    color: #038e48;
+}
+.data__flat{
+    background-image: url("../img/icons-001.png");
+}
+.data__data{
+    background-image: url("../img/icons-002.png");
+}
+.data__contact{
+    background-image: url("../img/icons-003.png");
+}
+.data .data__contact-frame{
+    line-height: 35px;
+}
+.data__edit{
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    background: url("../img/icons-004.png");
+    transition: opacity .3s ease;
+    -webkit-transition: opacity .3s ease;
+}
+.data__edit:hover{
+    opacity: .7;
+}
+/* --------------- /data --------------- */
+
+/* --------------- karta --------------- */
+.karta{
+    width: 330px;
+    margin-bottom: 72px;
+    padding: 18px;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    background-color: #eee;
+}
+.karta input{
+    height: 40px;
+    font-size: 22px;
+    font-weight: normal;
+}
+.karta input::-webkit-input-placeholder {
+    color: #d3d3d3;
+}
+.karta input:-moz-placeholder {
+    color: #d3d3d3;
+}
+.karta input.placeholder {
+    color: #d3d3d3;
+}
+.karta__term{
+    padding: 17px 0 3px;
+    text-align: justify;
+}
+.karta__term input{
+    width: 60px;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+.karta__term span{
+    font-size: 22px;
+    color: #d3d3d3;
+}
+.karta__term:after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+/* --------------- /karta --------------- */
 
 /* --------------- social --------------- */
 .social{
